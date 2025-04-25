@@ -1,0 +1,38 @@
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+@import "tailwindcss";
+
+/*
+  You can add custom Tailwind-based styles here to override
+  react-big-calendar's default styles.
+
+  Inspect the elements in your browser to find the CSS classes
+  applied by react-big-calendar (e.g., rbc-event, rbc-toolbar, etc.)
+  and apply Tailwind classes or custom CSS rules here.
+
+  Styling the toolbar background
+*/
+.tailwind-calendar .rbc-toolbar {
+    @apply bg-gray-200 p-2 rounded-t-lg;
+}
+
+/* Styling calendar events (if not using a custom event component) */
+/*
+.tailwind-calendar .rbc-event {
+  @apply rounded-md text-white;
+  background-color: #3b82f6;
+}
+*/
+
+/* Styling the header background */
+.tailwind-calendar .rbc-header {
+    @apply bg-gray-300 p-2;
+}
+
+/* Styling the day cells */
+.tailwind-calendar .rbc-day-bg {
+    @apply bg-white;
+}
+
+.tailwind-calendar .rbc-off-range-bg {
+    @apply bg-gray-100;
+}
